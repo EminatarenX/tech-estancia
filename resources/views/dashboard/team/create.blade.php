@@ -22,10 +22,7 @@
                         <label for="name" class="block text-gray-500">Nombre</label>
                         <input type="text" name="name" id="name" class="p-3 w-full mt-1 outline-none border-b-2" required>
                     </div>
-                    <div>
-                        <label for="role" class="block text-gray-500">Puesto</label>
-                        <input type="text" name="role" id="role" class="p-3 w-full mt-1 outline-none border-b-2" required>
-                    </div>
+      
                     <div>
                         <label for="email" class="block text-gray-500">Correo electronico</label>
                         <input type="email" name="email" id="email" class="p-3 w-full mt-1 outline-none border-b-2" required>
