@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-gray-100">
-    <main class="h-screen bg-gradient-to-r from-cyan-700 to-cyan-800 flex justify-center items-center">
+    <main class="h-screen bg-gradient-to-r from-cyan-600 to-sky-700 flex justify-center items-center">
         @yield('content')
     </main>
 

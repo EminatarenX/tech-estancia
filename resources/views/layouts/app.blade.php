@@ -29,7 +29,7 @@
             <a class="{{Request::is('dashboard/productos') ? 'bg-cyan-600 text-white' : 'bg-gray-200 text-gray-600'}} font-medium hover:text-white p-4 w-full rounded-lg hover:bg-cyan-600 transition-colors cursor-pointer ">
                 Productos
             </a>
-            <a href="{{route('products.create')}}" class="{{Request::is('dashboard/nuevo-producto') ? 'bg-cyan-600 text-white' : 'bg-gray-200 text-gray-600'}} font-medium hover:text-white p-4 w-full rounded-lg hover:bg-cyan-600 transition-colors cursor-pointer  ">
+            <a href="{{route('products.create')}}" class="{{Request::is('dashboard/products-create') ? 'bg-cyan-600 text-white' : 'bg-gray-200 text-gray-600'}} font-medium hover:text-white p-4 w-full rounded-lg hover:bg-cyan-600 transition-colors cursor-pointer  ">
                 Nuevo producto
             </a>
             @if(auth()->user()->role == 'super')
