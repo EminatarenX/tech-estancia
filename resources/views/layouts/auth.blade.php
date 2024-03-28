@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @stack('styles')
-    <title>Tech-app - @yield('title')</title>
+    <title>ASIT - @yield('title')</title>
     @vite('resources/css/app.css')
 </head>
 
