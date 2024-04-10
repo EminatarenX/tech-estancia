@@ -27,7 +27,7 @@
                     <tbody>
                         @foreach ($products as $product)
                             <tr class="border-b border-gray-200">
-                                <td class="p-3"><img src="" alt="{{$product['image']}}" /></td>
+                                <td class="p-3"><img src="{{asset('uploads/'.$product['image'])}}" alt="{{$product['image']}}" class="h-10 w-12 object-cover" /></td>
                                 <td class="p-3">{{ $product['name'] }}</td>
                                 <td class="p-3">{{ $product['price'] }}</td>
                                 <td class="p-3">{{ $product['stock'] }}</td>

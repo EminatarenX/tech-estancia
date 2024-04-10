@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-    <section class="p-5">
+    <section class="p-5 overflow-y-auto max-h-[90svh]">
         <form 
         action="{{route('imagenes.store')}}"
         method="POST"
@@ -47,6 +47,23 @@
                         <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
                     </div>
+                    <div>
+                        <label for="brand" class="block text-gray-500" >Marca</label>
+                        <input type="text" name="marca" id="marca" class="p-3 w-full mt-1 outline-none border-b-2" value="{{old('name')}}">
+                        @error('brand')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
+                    </div>
+      
+                    <div>
+                        <label for="model" class="block text-gray-500" >Modelo</label>
+                        <input type="text" name="model" id="model" class="p-3 w-full mt-1 outline-none border-b-2" value="{{old('name')}}">
+                        @error('model')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
+                    </div>
+                    
+      
       
                     <div>
                         <label for="category" class="block text-gray-500">Categoria</label>
