@@ -7,7 +7,32 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Levantar la aplicacion con docker compose
+### Rutas de acceso publico
+```json
+	"inicio": "/",
+	"productos": "/productos",
+	"servicios": "/servicios",
+	"contacto": "/contacto",
+```
+
+### Rutas privadas
+```json
+{
+	"Iniciar_sesion": "/login",
+	"Dashboard": "/dashboard",
+	"Lista_de_productos": "/dashboard/products",
+	"Crear_Producto": "/dashboard/products-create",
+	"Ver_producto": "/dashboard/products/{id_producto}",
+	"Lista_de_servicios": "/dashboard/services",
+	"Crear_servicios" : "/dashboard/services-create",
+	"Ver_servicio" : "/dashboard/services/{id_service}",
+	"Ver_equipo_de_trabajo": "/dashboard/team",
+	"Agregar_nuevo_miembro": "/dashboard/team-create",
+	"Ver_miembro": "/dashboard/team/{id_team_mate}",
+}
+```
+
+### Levantar la aplicacion con docker compose
 ```
 ./vendor/bin/sail up
 ```
@@ -15,12 +40,16 @@ o bien se puede ejecutar un comando mas corto si configuramos un alias de ese co
 ```
 sail up
 ```
-si no configuraste un alias usaras el comando completo *./vendor/bin/sail "seguido del comando a ejecutar"
+si no configuraste un alias usaras el comando completo ./vendor/bin/sail <command>
 
 ### Comandos de sail
+#### ejecutar entorno de desarrollo web con vite
+1. sail npm [command]
 
-1. sail npm 
+#### Acceder a la base de datos
 2. sail mysql -u
+
+#### Sail + artisan commands
 3. sail artisan
 	1. sail artisan tinker
 	2. sail artisan migrate

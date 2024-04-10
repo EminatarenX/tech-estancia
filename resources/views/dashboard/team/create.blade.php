@@ -31,6 +31,14 @@
                         <label for="password" class="block text-gray-500">Contrasena temporal</label>
                         <input type="text" name="password" id="password" class="p-3 w-full mt-1 outline-none border-b-2" required>
                     </div>
+                    <div>
+                        <label for="role" class="block text-gray-500">Rol</label>
+                        <select name="role" id="role" class="p-3 w-full text-neutral-600 mt-1 outline-none border-b-2" >
+                            <option class="text-neutral-800" value="super">Superadmin</option>
+                            <option class="text-neutral-800" value="admin">Administrador</option>
+                            <option class="text-neutral-800" value="dev">Desarrollador</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="mt-5">
                     <button type="submit"
